@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.thymeleaf/xhtml/org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Content</title>
+</head>
+<body>
+<div align="center">
+    <h1>Content List</h1>
+    <a href="new">Create New Content</a>
+    <br>
+    <table border="2" cellpadding="20">
+    </table>
+   <form action="#" th.action="@{/save details"} th:object="{Content}"></form>
+    <td> col span="2" ><button type="Save">Save</button>
+    </td>
+</body>
+</html>

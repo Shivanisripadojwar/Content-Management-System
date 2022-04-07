@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.thymeleaf/xhtml/org">
+<head><meta charset="UTF-8">
+    <title>Edit Content</title>
+    <script>
+function validate()
+let x1=document.getElementByID("Screen");
+if(x1.len>==20){
+document.getElementByID("p1").innerHTML="Screen size should not exceed more than 20";
+return false;
+}
+let x2=document.getElementByID("Description");
+
+    </script>
+</head>
+<body>
+<div align="center">
+    <h1>Edit Content</h1>
+    <br/>
+    <form action="#" th:action="@{/save}th:object="${Content}"></form>
+    mehod=<"POST">
+    <table border="0" cellpadding="10">
+    </table>
+    <tr>
+        <td>
+            Id:
+        </td>
+        <input type="text" th:field="{id}" readonly>
+        <td>
+            Screen:
+            <input type="text" th:field="{Screen}" readonly>
+        </td>
+        <td>
+            Description:
+            <input type="text" th:field="{Description}" readonly>
+        </td>
+    </tr>
+    <td colspan=""2"><button type="save"></button></td>
+</div>
+</body>
+</html>
